@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Frontend Mentor | Tip calculator app</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">spli<br />tter</h1>
+            <div class="content-box">
+                <div class="col-bill">
+                    <form>
+                        <div class="bill">
+                            <div class="bill__title">Bill</div>
+                            <label class="bill__label">
+                                <input
+                                    class="bill__input"
+                                    id="bill"
+                                    type="number"
+                                    step="0.01"
+                                    min="0"
+                                    placeholder="0,00"
+                                />
+                            </label>
+                        </div>
+                        <div class="tip">
+                            <div class="tip__title">Select Tip %</div>
+                            <div class="tip__inner">
+                                <button class="btn-tip" value="5">5%</button>
+                                <button class="btn-tip" value="10">10%</button>
+                                <button class="btn-tip" value="15">15%</button>
+                                <button class="btn-tip" value="25">25%</button>
+                                <button class="btn-tip" value="50">50%</button>
+                                <label
+                                    ><input
+                                        class="custom btn-tip"
+                                        type="number"
+                                        placeholder="Custom"
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="people">
+                            <div class="people__inner">
+                                <div class="people__title">
+                                    Number of People
+                                </div>
+                                <div class="people__error hide">
+                                    Can`t be zero
+                                </div>
+                            </div>
+                            <label class="people__label">
+                                <input
+                                    class="people__input"
+                                    id="people"
+                                    type="number"
+                                    placeholder="0"
+                                />
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-total">
+                    <div class="col-total__inner">
+                        <div class="tip-amount">
+                            <div class="tip-amount__inner">
+                                <div class="tip-amount__title">Tip amount</div>
+                                <div class="tip-amount__suptitle">/ person</div>
+                            </div>
+                            <span id="tip">$0.00</span>
+                        </div>
+                        <div class="person-total">
+                            <div class="person-total__inner">
+                                <div class="person-total__title">Total</div>
+                                <div class="person-total__suptitle">
+                                    / person
+                                </div>
+                            </div>
+                            <span id="total">$0.00</span>
+                        </div>
+                    </div>
+                    <button class="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/evgeniyborysov">EvgeniyBorysov</a>.
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
