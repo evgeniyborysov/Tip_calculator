@@ -44,17 +44,15 @@ function error() {
         ) {
             checkError.classList.remove("hide");
             numberOfPeopleInput.classList.add("error");
-            console.log("Ok");
         }
     } else {
-        console.log(`${people} + else`);
         checkError.classList.add("hide");
         numberOfPeopleInput.classList.remove("error");
     }
 }
 
 function reset() {
-    console.log(billInput.value);
+    percentOfTips = undefined;
     billInput.value = "";
     numberOfPeopleInput.value = "";
     customInput.value = "";
@@ -66,7 +64,6 @@ function reset() {
 }
 
 function addActive(e) {
-    console.log(e.target);
     for (let i = 0; i < tipButtons.length; i++) {
         if (tipButtons[i] == e.target) {
             e.target.classList.toggle("btn-active");
